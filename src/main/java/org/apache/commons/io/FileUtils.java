@@ -90,7 +90,7 @@ import org.apache.commons.io.filefilter.TrueFileFilter;
  */
 public class FileUtils {
     /**
-     * The number of bytes in a kilobyte.
+     * The number of bytes in a kilobyte?????.
      */
     public static final long ONE_KB = 1024;
 
@@ -2130,7 +2130,7 @@ public class FileUtils {
 
     /**
      * Finds files within a given directory (and optionally its subdirectories)
-     * which match an array of extensions.
+     * which match an array of extensions?????.
      *
      * @param directory  the directory to search in
      * @param extensions an array of extensions, ex. {"java","xml"}. If this

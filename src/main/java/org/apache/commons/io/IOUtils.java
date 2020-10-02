@@ -179,6 +179,7 @@ public class IOUtils {
      * @since 2.5
      */
     @SuppressWarnings("resource") // parameter null check
+    // ?inputStream???BufferedInputStream
     public static BufferedInputStream buffer(final InputStream inputStream) {
         // reject null early on rather than waiting for IO operation to fail
         // not checked by BufferedInputStream
@@ -339,7 +340,7 @@ public class IOUtils {
                 closeable.close();
             } catch (final IOException e) {
                 if (consumer != null) {
-                    consumer.accept(e);
+                    consumer.accept(e);// ?????????????????
                 }
             }
         }
@@ -744,6 +745,7 @@ public class IOUtils {
         final BufferedInputStream bufferedInput1 = buffer(input1);
         final BufferedInputStream bufferedInput2 = buffer(input2);
         int ch = bufferedInput1.read();
+        // ???????
         while (EOF != ch) {
             final int ch2 = bufferedInput2.read();
             if (ch != ch2) {
